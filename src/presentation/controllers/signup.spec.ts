@@ -126,6 +126,7 @@ describe('SignUp Controller', () => {
     const emailValidatorStub = makeEmailValidatorWithError()
     const sut = new SignUpController(emailValidatorStub)
     const httpRequest = {
+
       body: {
         name: 'any_email',
         email: 'any_email@mail.com',
